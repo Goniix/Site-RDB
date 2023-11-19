@@ -2,13 +2,19 @@
     font-family: geforceBold;
     src: url(src/font/GeForce-Bold-Alt.ttf);
   }
+  .mainGrid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 7fr;
+  }
 
 .navbar{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
+    grid-template: 1fr / repeat(6, 1fr);
+
     text-align: center;
     font: 2em "geforceBold";
+    background-color: greenyellow;
 }
 
 .indexNav{
