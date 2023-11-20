@@ -2,6 +2,10 @@
     font-family: geforceBold;
     src: url(src/font/GeForce-Bold-Alt.ttf);
 }
+@font-face {
+    font-family: interThin;
+    src: url(src/font/Inter-VariableFont_slnt\,wght.ttf);
+}
 
 body{
     background-color: black;
@@ -50,4 +54,11 @@ body{
 .navbar a:hover{
     color: white;
     background-color: #343434;
+}
+
+.indexText{
+    color: white;
+    grid-row-start: 2;
+    font: 2em "interThin";
+
 }
