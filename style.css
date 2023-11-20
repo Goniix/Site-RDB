@@ -6,6 +6,10 @@
     font-family: interThin;
     src: url(src/font/Inter-VariableFont_slnt\,wght.ttf);
 }
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(src/font/IBMPlexSans-Regular.ttf);
+}
 
 body{
     background-color: black;
