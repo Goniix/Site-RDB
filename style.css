@@ -14,12 +14,13 @@ body{
 .mainGrid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
 }
 
 .navbar{
     display: grid;
     grid-template: 1fr / repeat(7, 1fr);
+    height: fit-content;
 
     text-align: center;
     font: 2em "geforceBold";
@@ -57,8 +58,15 @@ body{
 }
 
 .indexText{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+
     color: white;
     grid-row-start: 2;
     font: 2em "interThin";
+}
 
+.indexTitle{
+    grid-column: 2/3;
 }
