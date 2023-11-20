@@ -70,3 +70,7 @@ body{
 .indexTitle{
     grid-column: 2/3;
 }
+.indexImage{
+    grid-column: 5/2;
+    width: 800px;
+}
