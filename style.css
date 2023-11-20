@@ -2,6 +2,14 @@
     font-family: geforceBold;
     src: url(src/font/GeForce-Bold-Alt.ttf);
 }
+@font-face {
+    font-family: interThin;
+    src: url(src/font/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(src/font/IBMPlexSans-Regular.ttf);
+}
 
 body{
     background-color: black;
@@ -10,12 +18,13 @@ body{
 .mainGrid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
 }
 
 .navbar{
     display: grid;
     grid-template: 1fr / repeat(7, 1fr);
+    height: fit-content;
 
     text-align: center;
     font: 2em "geforceBold";
@@ -50,4 +59,30 @@ body{
 .navbar a:hover{
     color: white;
     background-color: #343434;
+}
+
+.indexPage{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    color: white;
+    grid-row-start: 2;
+    font: 2em "interThin";
+}
+
+.indexTitle{
+    grid-column: 2/span 1;
+}
+.indexImage{
+    grid-column: 5;
+    grid-row: 1 / span 2;
+    width: 800px;
+}
+
+.indexText{
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    font: 2em "IBMPlexSans";
+    font-size: 20px;
 }
