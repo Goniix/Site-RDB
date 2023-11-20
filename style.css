@@ -35,12 +35,18 @@ body{
 .logoNav{
     grid-column-start: 2;
     font-size: 35px;
+    color: white;
 }
 
 .navbar a{
     padding-left: 10px;
     padding-right: 10px;
 }
+.navbar a:link, .navbar a:visited{
+    color: gray;
+    text-decoration: none;
+}
+
 .navbar a:hover{
     color: white;
     background-color: #343434;
