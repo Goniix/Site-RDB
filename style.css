@@ -63,26 +63,46 @@ body{
 
 .indexPage{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 
     color: white;
     grid-row-start: 2;
     font: 2em "interThin";
 }
 
-.indexTitle{
+.indexTitle1{
     grid-column: 2/span 1;
 }
-.indexImage{
-    grid-column: 5;
+.indexImage1{
+    grid-column: 5 / span 2;
     grid-row: 1 / span 2;
-    width: 800px;
+    width: 700px;
 }
 
-.indexText{
+.indexText1{
     grid-column: 2 / span 2;
     grid-row: 2;
     font: 2em "IBMPlexSans";
     font-size: 20px;
+}
+.indexTitle2{
+    grid-column: 5/span 1;
+}
+.indexImage2{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+    width: 700px;
+}
+
+.indexText2{
+    grid-column: 5 / span 2;
+    grid-row: 4;
+    font: 2em "IBMPlexSans";
+    font-size: 20px;
+}
+
+.infoPage{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
