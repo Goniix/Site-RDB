@@ -86,3 +86,8 @@ body{
     font: 2em "IBMPlexSans";
     font-size: 20px;
 }
+
+.infoPage{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
