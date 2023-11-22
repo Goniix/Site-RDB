@@ -85,14 +85,14 @@ a
     font: 2em "interThin";
 }
 
-.indexField{
+.horizontalField{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
 }
-.indexFieldReversed{
+.horizontalFieldReversed{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
