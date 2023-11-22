@@ -16,15 +16,20 @@ body{
 }
 
 #mainGrid{
+    /*
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 50px 1fr;
+    */
+    display: flex;
+    flex-direction: column;
 }
 
 #navbar{
-    display: grid;
-    grid-template: 1fr / repeat(7, 1fr);
-    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
     text-align: center;
     font: 2em "geforceBold";
@@ -36,8 +41,6 @@ body{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-
-    grid-row-start: 1;
 }
 
 
@@ -46,23 +49,18 @@ body{
     font-size: 35px;
     color: white;
 }
-/*
-#navbar a{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#navbar a:link, #navbar a:visited{
-    color: gray;
-    text-decoration: none;
-}*/
 
 #navbar div:hover:not(#logoNav),#currentPage{
     color: white;
     background-color: #343434;
     cursor: pointer;
-
 }
+
+#navbar > div{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 #currentPage{
     cursor: default !important;
 }
