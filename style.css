@@ -46,15 +46,29 @@ body{
     color: white;
 }
 
-#navbar div:hover:not(#logoNav),#currentPage{
+#navbar a:hover:not(#logoNav),#currentPage{
     color: white;
     background-color: #343434;
     cursor: pointer;
 }
 
-#navbar > div{
-    padding-left: 50px;
-    padding-right: 50px;
+#navbar > a, #navbar > p
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#navbar a:visited
+{
+    color: gray;
+
 }
 
 #currentPage{
