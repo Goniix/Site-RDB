@@ -46,19 +46,25 @@ body{
     font-size: 35px;
     color: white;
 }
-
+/*
 #navbar a{
     padding-left: 10px;
     padding-right: 10px;
 }
+
 #navbar a:link, #navbar a:visited{
     color: gray;
     text-decoration: none;
-}
+}*/
 
-#navbar div:hover:not(#logoNav), #navbar div:hover a,#currentPage{
+#navbar div:hover:not(#logoNav),#currentPage{
     color: white;
     background-color: #343434;
+    cursor: pointer;
+
+}
+#currentPage{
+    cursor: default !important;
 }
 
 #indexPage{
