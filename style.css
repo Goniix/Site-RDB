@@ -88,7 +88,7 @@ a
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 50px;
 }
 .horizontalFieldReversed{
@@ -106,17 +106,32 @@ a
     width: 700px;
 }
 
+.verticalField{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.verticalField .textBlock{
+    width: 80%;
+}
+
 .textBlock{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
 }
 .textBlock p{
     font: 2em "IBMPlexSans";
     font-size: 20px;
     width: 60%;
+    margin-bottom: 0px;
+
 }
-.textBlock h1{
+.textBlock h1, .textBlock h3, .textBlock h5{
     width: 70%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
+
