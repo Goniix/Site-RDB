@@ -32,7 +32,6 @@ body{
     font: 2em "geforceBold";
     color: gray;
     background-color: black;
-    margin: -8px;
     margin-top: 0px;
 
     position: -webkit-sticky;
@@ -44,12 +43,12 @@ body{
 #logoNav{
     font-size: 35px;
     color: white;
+    cursor: default !important;
 }
 
-#navbar a:hover:not(#logoNav),#currentPage{
+#navbar a:hover:not(#logoNav), #currentPage{
     color: white;
     background-color: #343434;
-    cursor: pointer;
 }
 
 #navbar > a, #navbar > p
