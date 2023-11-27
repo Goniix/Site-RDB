@@ -141,7 +141,10 @@ a
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center ;
+    align-items: center;
+}
+.verticalFlexGrid .textBlock{
+    margin-left: -400px;
 }
 
 .cardField{
@@ -155,7 +158,8 @@ a
 .cardContainer{
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    flex-wrap: wrap;
+    border-radius: 25px;
     background-color: white;
     width: 25%;
 }
@@ -164,10 +168,16 @@ a
     text-align: center;
     background-color: #343434;
     margin-bottom: 0px;
+    margin-top: 0px;
     padding-bottom: 15px;
     padding-top: 15px;
-    font: 1em "IBMPlexSans";
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font: 0.7em "IBMPlexSans";
     font-style: italic;
+    flex-grow: 1;
 }
 .cardContainer img{
+    width: 100%;
+    border-radius: 25px;
 }
