@@ -125,13 +125,15 @@ a
 .textBlock p{
     font: 2em "IBMPlexSans";
     font-size: 20px;
-    width: 60%;
+    width: 65%;
     margin-bottom: 0px;
-
 }
 .textBlock h1, .textBlock h3, .textBlock h5{
     width: 70%;
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+.textBlock p>a{
+    color: gray;
 }
 
