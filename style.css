@@ -174,8 +174,8 @@ a
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     font: 0.7em "IBMPlexSans";
-    font-style: italic;
     flex-grow: 1;
+    font-weight: bold;
 }
 .cardContainer img{
     width: 100%;
