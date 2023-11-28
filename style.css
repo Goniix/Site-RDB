@@ -13,7 +13,26 @@
 
 body{
     background-color: black;
-    margin-top: 0px;
+    margin: 0px;
+}
+
+footer{
+    background-color: #343434;
+    color: white;
+    font: 2em "IBMPlexSans";
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+footer p{
+    margin-left: 50px;
+}
+footer a:visited{
+    color: #F4F4F4;
+    
 }
 
 #mainGrid{
