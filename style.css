@@ -195,7 +195,9 @@ a
     border-radius: 25px;
     width: 25%;
 }
-.cardContainer p{
+
+
+div.cardContainer p, div.cardContainer summary{
     color: white;
     background-color: #343434;
     font: 0.7em "IBMPlexSans";
@@ -213,6 +215,24 @@ a
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
 }
+
+div.cardContainer details[open]{
+    background-color: #343434;
+    font: 0.5em "IBMPlexSans";
+    
+    text-align: center;
+    flex-grow: 1;
+
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
 .cardContainer img{
     width: 100%;
     border-radius: 25px;
