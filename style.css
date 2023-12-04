@@ -48,6 +48,21 @@ footer a:visited{
     
 }
 
+a.aButton{
+    font: .5em "IBMPlexSans";
+
+    color: gray;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+a.aButton:hover{
+    color: white;
+    background-color: #343434;
+    cursor: pointer;
+}
+
 div#mainGrid{
     display: flex;
     flex-direction: column;
@@ -269,14 +284,7 @@ div#badgeCodeBox{
 div#badgecodeBox input{
     color: #555;
 }
-div#badgeCodeBox a{
-    font: .5em "IBMPlexSans";
 
-    color: white;
-    background-color: #343434;
-    padding: 10px;
-    border-radius: 15px;
-}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
