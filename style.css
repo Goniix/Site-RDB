@@ -185,20 +185,61 @@ a
 
     width: 80%;
 }
-.cardContainer{
+div.cardContainer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-self: flex-start;
 
     background-color: white;
     
     border-radius: 25px;
     width: 25%;
 }
-.cardContainer p{
+
+div.cardContainer summary{
     color: white;
     background-color: #343434;
-    font: 0.7em "IBMPlexSans";
+    font: 25px "IBMPlexSans";
+    font-weight: bold;
+
+    text-align: center;
+    flex-grow: 1;
+
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.cardContainer details[open]{
+    background-color: #343434;
+    font: 0.5em "IBMPlexSans";
+    
+    text-align: center;
+    flex-grow: 1;
+
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+div.cardContainer details[open] summary{
+    font: 25px "IBMPlexSans";
+    font-weight: bold;
+}
+
+div.cardContainer img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+div.cardContainer a{
+    color: white;
+    background-color: #222;
+    font: 25px "IBMPlexSans";
     font-weight: bold;
 
     text-align: center;
@@ -212,8 +253,4 @@ a
 
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
-}
-.cardContainer img{
-    width: 100%;
-    border-radius: 25px;
 }
