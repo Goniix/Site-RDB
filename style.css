@@ -211,9 +211,6 @@ div.cardContainer summary{
     margin-top: 0px;
     padding-bottom: 15px;
     padding-top: 15px;
-
-    border-bottom-left-radius: 22px;
-    border-bottom-right-radius: 22px;
 }
 
 div.cardContainer details[open]{
@@ -228,9 +225,6 @@ div.cardContainer details[open]{
     margin-top: 0px;
     padding-bottom: 15px;
     padding-top: 0px;
-
-    border-bottom-left-radius: 22px;
-    border-bottom-right-radius: 22px;
 }
 div.cardContainer details[open] summary{
     font: 25px "IBMPlexSans";
@@ -240,4 +234,23 @@ div.cardContainer details[open] summary{
 div.cardContainer img{
     width: 100%;
     border-radius: 25px;
+}
+
+div.cardContainer a{
+    color: white;
+    background-color: #222;
+    font: 25px "IBMPlexSans";
+    font-weight: bold;
+
+    text-align: center;
+    flex-grow: 1;
+
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
 }
