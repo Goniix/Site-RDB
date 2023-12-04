@@ -62,10 +62,11 @@ a.aButton:hover{
     background-color: #343434;
     cursor: pointer;
 }
-#collabHorizontal a.aButton{
+div#collabHorizontal a.aButton{
     font: .7em "IBMPlexSans";
-
-    margin-left: 10%;
+    
+    align-self: center;
+    
 }
 
 div#mainGrid{
@@ -164,6 +165,9 @@ div.verticalField div.textBlock{
 }
 div.horizontalField div.verticalField{
     width: 50%;
+}
+div#collabHorizontal div.verticalField{
+    align-items: center;
 }
 
 div.textBlock{
