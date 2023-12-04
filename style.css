@@ -12,8 +12,22 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: black;
     margin: 0px;
+}
+
+a:link
+{
+    color: gray;
+    text-decoration: none;
+}
+a:visited
+{
+    color: gray;
+    text-decoration: none;
 }
 
 footer{
@@ -25,7 +39,6 @@ footer{
     margin-top: 50px;
     padding-bottom: 5px;
     padding-top: 5px;
-
 }
 footer p{
     margin-left: 50px;
@@ -35,13 +48,29 @@ footer a:visited{
     
 }
 
-#mainGrid{
+a.aButton{
+    font: .5em "IBMPlexSans";
+
+    color: gray;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+a.aButton:hover{
+    color: white;
+    background-color: #343434;
+    cursor: pointer;
+}
+
+div#mainGrid{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 1;
 }
 
-#navbar{
+div#navbar{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,43 +88,32 @@ footer a:visited{
     position: sticky;
     top: 0;
 }
-
-
-#logoNav{
-    font-size: 35px;
-    color: white;
-    cursor: default !important;
-}
-
-#navbar a:hover:not(#logoNav), #currentPage{
+div#navbar a:hover:not(#logoNav), #currentPage{
     color: white;
     background-color: #343434;
 }
-
-#navbar > a, #navbar > p
+div#navbar > a, #navbar > p
 {
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
-a
-{
-    text-decoration: none;
-}
-
-#navbar a:visited
+div#navbar a:visited
 {
     color: gray;
 
 }
-
-#currentPage{
+p#logoNav{
+    font-size: 35px;
+    color: white;
+    cursor: default !important;
+}
+p#currentPage{
     cursor: default !important;
 }
 
-.contentPage{
+div.contentPage{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -105,7 +123,7 @@ a
     font: 2em "interThin";
 }
 
-.horizontalField{
+div.horizontalField{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -113,7 +131,7 @@ a
 
     margin-top: 50px;
 }
-.horizontalFieldReversed{
+div.horizontalFieldReversed{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -122,32 +140,32 @@ a
     margin-top: 50px;
 }
 
-.horizontalField img{
+div.horizontalField img{
     width: 700px;
 }
-.horizontalFieldReversed img{
+div.horizontalFieldReversed img{
     width: 700px;
 }
 
-.verticalField{
+div.verticalField{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
     width: 70%;
 }
-.verticalField .textBlock{
+div.verticalField div.textBlock{
     width: 80%;
 }
 
-.textBlock{
+div.textBlock{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     
     width: 40%;
 }
-.textBlock p{
+div.textBlock p{
     font: 2em "IBMPlexSans";
     font-size: 20px;
 
@@ -155,27 +173,27 @@ a
 
     margin-bottom: 0px;
 }
-.textBlock h1, .textBlock h2, .textBlock h3, .textBlock h5{
+div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h5{
     width: 70%;
 
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
-.textBlock p>a{
+div.textBlock p>a{
     color: gray;
 }
 
-.verticalFlexGrid{
+div.verticalFlexGrid{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
-.verticalFlexGrid .textBlock{
+div.verticalFlexGrid .textBlock{
     margin-left: -400px;
 }
 
-.cardField{
+div.cardField{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -235,6 +253,9 @@ div.cardContainer img{
     width: 100%;
     border-radius: 25px;
 }
+div.cardContainer summary:hover{
+    cursor: pointer;
+}
 
 div.cardContainer a{
     color: white;
@@ -248,9 +269,31 @@ div.cardContainer a{
 
     margin-bottom: 0px;
     margin-top: 0px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
 
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
+}
+
+div#badgeCodeBox{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font: 1.5em "IBMPlexSans";
+}
+div#badgecodeBox input{
+    color: #555;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#backToIndex{
+    font: 0.7em "IBMPlexSans";
+    font-weight: bold;
 }
