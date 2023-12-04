@@ -62,6 +62,11 @@ a.aButton:hover{
     background-color: #343434;
     cursor: pointer;
 }
+#collabHorizontal a.aButton{
+    font: .7em "IBMPlexSans";
+
+    margin-left: 10%;
+}
 
 div#mainGrid{
     display: flex;
@@ -157,6 +162,9 @@ div.verticalField{
 div.verticalField div.textBlock{
     width: 80%;
 }
+div.horizontalField div.verticalField{
+    width: 50%;
+}
 
 div.textBlock{
     display: flex;
@@ -173,7 +181,7 @@ div.textBlock p{
 
     margin-bottom: 0px;
 }
-div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h5{
+div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.textBlock h5{
     width: 70%;
 
     margin-bottom: 0px;
@@ -189,7 +197,7 @@ div.verticalFlexGrid{
     flex-wrap: wrap;
     align-items: center;
 }
-div.verticalFlexGrid .textBlock{
+div.verticalFlexGrid div.textBlock{
     margin-left: -400px;
 }
 
