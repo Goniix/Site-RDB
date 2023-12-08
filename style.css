@@ -309,3 +309,12 @@ input::-webkit-inner-spin-button {
     font: 0.7em "IBMPlexSans";
     font-weight: bold;
 }
+
+img#fakeMap{
+    border-radius: 30px;
+}
+
+a.aButton#mapValidation{
+    margin-top: 50px;
+    align-self: center;
+}
