@@ -332,11 +332,13 @@ div.accountCardContainer{
 
 div.accountCard{
     margin-right: 20px;
+    margin-bottom: 15px;
     border-radius: 25px;
     background-color: #343434;
 }
 div.accountCard h4{
     margin-left: 20px;
+    margin-top: 12px;
     margin-bottom: 0px;
     font: .7em "IBMPlexSans";
     font-weight: bold;
