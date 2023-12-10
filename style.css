@@ -300,9 +300,8 @@ div#badgecodeBox input{
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    margin: 0;
 }
 
 #backToIndex{
@@ -317,4 +316,34 @@ img#fakeMap{
 a.aButton#mapValidation{
     margin-top: 50px;
     align-self: center;
+}
+
+#collabFooter{
+    margin-top: 332px;
+}
+
+div.accountCardContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+div.accountCard{
+    margin-right: 20px;
+    border-radius: 25px;
+    background-color: #343434;
+}
+div.accountCard h4{
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font: .7em "IBMPlexSans";
+    font-weight: bold;
+
+}
+div.accountCard p{
+    margin-left: 30px;
+    font: .4em "IBMPlexSans";
+    color: #ccc
 }
