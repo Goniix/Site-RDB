@@ -8,39 +8,32 @@
   </head>
   <body>
     <div id="mainGrid">
-      
       <div id="navbar">
         <p id="logoNav">VeloVidia</p>
         <a href="index.html">Accueil</a>
         <a href="informations.html">Informations</a>
         <a href="material.html">Matériel</a>
-        <p id="currentPage">Collaborer</p>
+        <a href="collab.html">Collaborer</a>
         <a href="account.html">Mon Compte</a>
       </div>
-
       <div class="contentPage">
         <div class="verticalField">
-
           <div class="textBlock">
-            <h2>Participer au programme de covoiturage</h2>
+            <h3>Donnez des informations sur votre trajet/véhicule</h3>
+            <form action="map_page.html" method="POST">
+              <label for="nombrePlaces">-Nombres de places disponibles:</label>
+              <input type="number" name="nombrePlaces" min="1" max="9" required>
+              <label for="nombrePlaces">-Date de départ:</label>
+              <input type="date" name="dateDepart" required>     
+              <label for="nomVehicule">-Nom du véhicule:</label>
+              <input type="text" name="nomVehicule" required>
+              <input type="submit">
+            </form>
           </div>
-
-          <div class="horizontalField" id="collabHorizontal">
-            <div class="verticalField">
-              <h5>J'ai une voiture</h5>
-              <a class="aButton" href="host_info_car.html">Valider</a>
-            </div>
-            <div class="verticalField">
-              <h5>Je cherche un conducteur</h5>
-              <a class="aButton" href="map_page.html">Valider</a>
-            </div>
-          </div>
-
         </div>
       </div>
-    
     </div>
-    <footer id="pushedFooter">
+    <footer id="collabFooter">
       <p><a href="https://www.nvidia.com/fr-fr/about-nvidia/privacy-policy/">Déclaration de confidentialité</a> | <a href="index.html">Accueil</a> | <a href="informations.html">Informations</a> | <a href="material.html">Matériel</a> | <a href="collab.html">Collaborer</a></p>
     </footer>
   </body>

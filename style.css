@@ -177,13 +177,14 @@ div.textBlock{
     
     width: 40%;
 }
-div.textBlock p{
+div.textBlock p, div.textBlock label{
     font: 2em "IBMPlexSans";
     font-size: 20px;
 
     width: 65%;
 
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.textBlock h5{
     width: 70%;
@@ -193,6 +194,25 @@ div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.text
 }
 div.textBlock p>a{
     color: gray;
+}
+
+div.textBlock input{
+    width: 100px;
+    margin-left: 5px;
+}
+div.textBlock input[type=text]{
+    width: 150px;
+}
+div.textBlock input[type=submit]{
+    margin-top: 15px;
+}
+
+div.textBlock form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
 }
 
 div.verticalFlexGrid{
@@ -300,9 +320,8 @@ div#badgecodeBox input{
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    margin: 0;
 }
 
 #backToIndex{
@@ -317,4 +336,36 @@ img#fakeMap{
 a.aButton#mapValidation{
     margin-top: 50px;
     align-self: center;
+}
+
+#pushedFooter{
+    margin-top: 350px;
+}
+
+div.accountCardContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+div.accountCard{
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background-color: #343434;
+}
+div.accountCard h4{
+    margin-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    font: .7em "IBMPlexSans";
+    font-weight: bold;
+
+}
+div.accountCard p{
+    margin-left: 30px;
+    font: .4em "IBMPlexSans";
+    color: #ccc
 }
