@@ -184,7 +184,6 @@ div.textBlock p, div.textBlock label{
     width: 65%;
 
     margin-bottom: 0px;
-    margin-top: 5px;
 }
 div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.textBlock h5{
     width: 70%;
@@ -195,16 +194,23 @@ div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.text
 div.textBlock p>a{
     color: gray;
 }
-
+div.textBlock label{
+    margin-top: 8px;
+    font-weight: bold;
+}
 div.textBlock input{
     width: 100px;
     margin-left: 5px;
+    margin-top: 2px;
 }
 div.textBlock input[type=text]{
     width: 150px;
 }
 div.textBlock input[type=submit]{
-    margin-top: 15px;
+    margin-top: 25px;
+    font: 2em "IBMPlexSans";
+    font-size: 15px;
+    font-weight: bold;
 }
 
 div.textBlock form{
