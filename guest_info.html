@@ -19,16 +19,17 @@
       <div class="contentPage">
         <div class="verticalField">
           <div class="textBlock">
-            <h3>Donnez des informations sur votre trajet/véhicule</h3>
-            <form action="map_page.html" method="POST">
+            <h3>Donnez des informations sur vous:</h3>
+            <form action="validated.html" method="POST">
               <label for="badgeCode">-Entrez votre code badge:</label>
               <input type="text" id="badgeCode" minlength="10" maxlength="10" size="10" required placeholder="XXXXXXXXXX">
-              <label for="nombrePlaces">-Nombres de places disponibles:</label>
-              <input type="number" name="nombrePlaces" min="1" max="9" required>
-              <label for="nombrePlaces">-Date de départ:</label>
-              <input type="date" name="dateDepart" required>     
-              <label for="nomVehicule">-Nom du véhicule:</label>
-              <input type="text" name="nomVehicule" required>
+
+              <label for="adresseGuest">-Votre adresse:</label>
+              <input type="text" name="adresseGuest" required>     
+
+              <label for="matos">-Ce que vous emportez:</label>
+              <input type="text" name="matos" required>
+
               <input type="submit">
             </form>
           </div>
