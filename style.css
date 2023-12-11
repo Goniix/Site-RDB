@@ -177,13 +177,14 @@ div.textBlock{
     
     width: 40%;
 }
-div.textBlock p{
+div.textBlock p, div.textBlock label{
     font: 2em "IBMPlexSans";
     font-size: 20px;
 
     width: 65%;
 
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.textBlock h5{
     width: 70%;
@@ -193,6 +194,25 @@ div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.text
 }
 div.textBlock p>a{
     color: gray;
+}
+
+div.textBlock input{
+    width: 100px;
+    margin-left: 5px;
+}
+div.textBlock input[type=text]{
+    width: 150px;
+}
+div.textBlock input[type=submit]{
+    margin-top: 15px;
+}
+
+div.textBlock form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
 }
 
 div.verticalFlexGrid{
@@ -318,8 +338,8 @@ a.aButton#mapValidation{
     align-self: center;
 }
 
-#collabFooter{
-    margin-top: 332px;
+#pushedFooter{
+    margin-top: 350px;
 }
 
 div.accountCardContainer{
