@@ -2,10 +2,12 @@
     font-family: geforceBold;
     src: url(src/font/GeForce-Bold-Alt.ttf);
 }
+
 @font-face {
     font-family: interThin;
     src: url(src/font/Inter-VariableFont_slnt\,wght.ttf);
 }
+
 @font-face {
     font-family: IBMPlexSans;
     src: url(src/font/IBMPlexSans-Regular.ttf);
@@ -24,6 +26,7 @@ a:link
     color: gray;
     text-decoration: none;
 }
+
 a:visited
 {
     color: gray;
@@ -177,7 +180,8 @@ div.textBlock{
     
     width: 40%;
 }
-div.textBlock p, div.textBlock label{
+
+div.textBlock p, div.textBlock label, div.textBlock li{
     font: 2em "IBMPlexSans";
     font-size: 20px;
 
@@ -185,31 +189,37 @@ div.textBlock p, div.textBlock label{
 
     margin-bottom: 0px;
 }
+
 div.textBlock h1, div.textBlock h2, div.textBlock h3, div.textBlock h4, div.textBlock h5{
     width: 70%;
 
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
 div.textBlock p>a{
     color: gray;
 }
+
 div.textBlock label{
     margin-top: 8px;
     font-weight: bold;
 }
+
 div.textBlock input{
     width: 100px;
     margin-left: 5px;
     margin-top: 2px;
 }
+
 div.textBlock input[type=text]{
     width: 150px;
 }
+
 div.textBlock input[type=submit]{
     margin-top: 25px;
     font: 2em "IBMPlexSans";
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -227,6 +237,7 @@ div.verticalFlexGrid{
     flex-wrap: wrap;
     align-items: center;
 }
+
 div.verticalFlexGrid div.textBlock{
     margin-left: -400px;
 }
@@ -241,6 +252,7 @@ div.cardField{
 
     width: 80%;
 }
+
 div.cardContainer{
     display: flex;
     flex-direction: column;
@@ -262,7 +274,6 @@ div.cardContainer summary{
     text-align: center;
     flex-grow: 1;
 
-
     margin-bottom: 0px;
     margin-top: 0px;
     padding-bottom: 15px;
@@ -276,12 +287,12 @@ div.cardContainer details[open]{
     text-align: center;
     flex-grow: 1;
 
-
     margin-bottom: 0px;
     margin-top: 0px;
     padding-bottom: 15px;
     padding-top: 0px;
 }
+
 div.cardContainer details[open] summary{
     font: 25px "IBMPlexSans";
     font-weight: bold;
@@ -291,6 +302,7 @@ div.cardContainer img{
     width: 100%;
     border-radius: 25px;
 }
+
 div.cardContainer summary:hover{
     cursor: pointer;
 }
@@ -303,7 +315,6 @@ div.cardContainer a{
 
     text-align: center;
     flex-grow: 1;
-
 
     margin-bottom: 0px;
     margin-top: 0px;
@@ -322,7 +333,6 @@ div#badgeCodeBox{
 div#badgecodeBox input{
     color: #555;
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -362,6 +372,7 @@ div.accountCard{
     border-radius: 25px;
     background-color: #343434;
 }
+
 div.accountCard h4{
     margin-left: 20px;
     margin-top: 12px;
@@ -370,6 +381,7 @@ div.accountCard h4{
     font-weight: bold;
 
 }
+
 div.accountCard p{
     margin-left: 30px;
     font: .4em "IBMPlexSans";
