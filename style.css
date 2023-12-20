@@ -356,7 +356,7 @@ div.accountCardContainer{
     margin-top: 30px;
 }
 
-div.accountCard{
+div.accountCard, a:has(div.accountCard){
     margin-right: 20px;
     margin-bottom: 15px;
     border-radius: 25px;
@@ -368,6 +368,7 @@ div.accountCard h4{
     margin-bottom: 0px;
     font: .7em "IBMPlexSans";
     font-weight: bold;
+    color: white;
 
 }
 div.accountCard p{
