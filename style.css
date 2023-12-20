@@ -231,6 +231,10 @@ div.textBlock form{
     margin-top: 15px;
 }
 
+div.textBlock ul{
+    margin-top: 0;
+}
+
 div.verticalFlexGrid{
     display:flex;
     flex-direction: column;
